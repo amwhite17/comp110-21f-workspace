@@ -1,5 +1,5 @@
-"""My first program for COMP110"""
+"""My first program for COMP110."""
 
-_author_="730281821"
+_author_= "730281821"
 
-print("Hello, world good morning.")
+print("Hello, world. Good morning.")
