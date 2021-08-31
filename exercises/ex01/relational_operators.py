@@ -6,8 +6,7 @@ right = int = 8
 
 print("Left-hand side: " , left)
 print("Right-hand side: " , right)
-print(left, " < ", right, " is " , (left)<(right))
-print(left, " >= ", right, " is " , (left)>=(right))
-print(left, " == " , right, " is " , (left)==(right))
-print(left, " != " , right, " is ", (left)!=(right))
-
+print(left , " < ", right , "is" , (left) < (right))
+print(left , " >= ", right , "is" , (left) >= (right))
+print(left , " == " , right , "is" , (left) == (right))
+print(left , " != " , right , "is" , (left) != (right))

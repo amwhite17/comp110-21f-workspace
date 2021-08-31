@@ -11,6 +11,5 @@ print("You entered: ")
 print(name)
 
 print(name + " rocks!")
-print("You got this, " + name)
-print("Work hard, " + name + ", and you will do great!")
-
+print("You got this, " + name + "!")
+print("Work hard, " + name + " , and you will do great!")
