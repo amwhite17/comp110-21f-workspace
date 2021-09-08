@@ -23,10 +23,8 @@ else:
         if 5 < random < 8:
             print("Relaxation is coming your way! ")
         else:
-             7 < random < 11 
-             print("Find your inner peace. ")
-             
+            7 < random < 11 
+            print("Find your inner peace. ")
+
 
 print("Now, go spread positive vibes! ")
-
-

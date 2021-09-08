@@ -8,4 +8,3 @@ word: str = input("Enter a word: ")
 count = word.count(letter)
 
 print("Count: ", count)
-
