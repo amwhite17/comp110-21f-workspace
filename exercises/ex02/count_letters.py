@@ -2,9 +2,14 @@
 
 __author__ = "730281821"
 
-letter: str = input("What letter do you want to search for? ")
-word: str = input("Enter a word: ")
+letter: str = str(input("What letter do you want to search for? "))
 
-count = word.count(letter)
+word: str = str(input("Enter a word: "))
+
+count = 0
+
+for i in range(len(word)):
+    if(word[i] == letter):
+        count = count + 1
 
 print("Count: ", count)
