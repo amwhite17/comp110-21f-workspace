@@ -18,5 +18,3 @@ while(i < len(word)):
         a = a + 1
 
 print("Found duplicate:", bool)
-
-
