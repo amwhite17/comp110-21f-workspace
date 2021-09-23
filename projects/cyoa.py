@@ -11,6 +11,7 @@ grinning_emoji = "\U0001f600"
 
 
 def main() -> None:
+    """The Function"""
     global points
     global player 
     greet()
@@ -41,6 +42,7 @@ def main() -> None:
 
 
 def game(coin: int) -> int:
+    """The Game (Flipping a Coin."""
     global points
     count = 0
     while(True):
@@ -76,6 +78,7 @@ def game(coin: int) -> int:
 
 
 def arcade() -> int:
+    """Arcade Prizes"""
     global grinning_emoji
     print("Welcome to the Arcade!")
     print("1 - Words of Encouragement for 1 point.")
@@ -110,12 +113,14 @@ def arcade() -> int:
 
 
 def greet() -> None:
+    """Greeting."""
     global player
     print("Hello! Thanks for playing CoinFlip! In this game, you will try to correctly guess whether a coin will land on Heads or Tails. ")
     player = str(input("What is your name?"))
 
 
 def rules() -> None:
+    """Rule to Play."""
     print("A coin will be flipped. It is your job to correctly guess what side the coin will land on. ")
     print("The more correct guesses you have in a row, the more points you will earn! ")
     print("For 1 correct guess, you will receive 2 point.")
@@ -126,9 +131,11 @@ def rules() -> None:
 
 
 def flip() -> int: 
+    """Flips Coin."""
     flip = random.randint(0, 1)
     return (flip)
 
 
 if __name__ == "__main__":
+    """Calls Function."""
     main()
