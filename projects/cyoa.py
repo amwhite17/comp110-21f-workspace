@@ -47,7 +47,6 @@ def game(coin: int) -> int:
     count = 0
     while(True):
         flip: int = random.randint(0, 1)
-        print(flip)
         guess = int(input("Guess whether the coin will land on heads or tails. Choose heads by entering 0 or choose tails by entering 1."))
         if (guess == 0):
             print("You guessed heads.")
