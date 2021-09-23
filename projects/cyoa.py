@@ -11,7 +11,7 @@ grinning_emoji = "\U0001f600"
 
 
 def main() -> None:
-    """The Function"""
+    """The Function."""
     global points
     global player 
     greet()
@@ -78,7 +78,7 @@ def game(coin: int) -> int:
 
 
 def arcade() -> int:
-    """Arcade Prizes"""
+    """Arcade Prizes."""
     global grinning_emoji
     print("Welcome to the Arcade!")
     print("1 - Words of Encouragement for 1 point.")
