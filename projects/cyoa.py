@@ -1,6 +1,5 @@
 """Create Your Own Adventure."""
 
-
 __author__ = "730281821"
 
 
@@ -22,7 +21,6 @@ def main() -> None:
         print("3 - Arcade.")
         print("4 - End the Game.")
         option = int(input("Choose what you would like to do from the options by entering the corresponding number. "))
-
         if(option == 1):
             print(f"Welcome, {player} these are the rules.")
             print(f"So far, {player} has {points} points.")
@@ -32,16 +30,15 @@ def main() -> None:
             print(f"{player} has {points} points.")
             print(f"Let's get started, {player}.")
             coin = flip()
-            game(coin)
-            
+            game(coin)  
         if(option == 3):
             print(f"{player} has {points} points.")
             arcade()
-            
         if(option == 4):
             print("Thank you for playing!")
             print(f"Your final score was {points}.")
             print(f"Goodbye, {player}.")
+
 
 def game(coin: int) -> int:
     global points
@@ -54,13 +51,10 @@ def game(coin: int) -> int:
             print("You guessed heads.")
         else: 
             print("You guessed tails.")
-
-    
         if (flip == guess):
             global points
             print("You guessed correctly! You will be awarded points!")
             count = count + 1
-
             if (count == 1):
                 points = points + 2
             else:
@@ -80,6 +74,7 @@ def game(coin: int) -> int:
         return points    
         break 
 
+
 def arcade() -> int:
     global grinning_emoji
     print("Welcome to the Arcade!")
@@ -87,8 +82,6 @@ def arcade() -> int:
     print("2 - Compliment for 2 points.")
     print("3 - Emoji for 3 points.")
     prize = int(input("Select your prize by entering the corresponging number. "))
-    
-    
     if(prize == 1):
         global points
         if points >= 1:
@@ -97,8 +90,7 @@ def arcade() -> int:
             input("Press enter to return to Home Page.")
         else:
             print("Not enough points available for this prize.")
-            input("Press enter to return to Home Page.")
-    
+            input("Press enter to return to Home Page.") 
     if(prize == 2): 
         if points >= 2:
             points = points - 2
@@ -122,6 +114,7 @@ def greet() -> None:
     print("Hello! Thanks for playing CoinFlip! In this game, you will try to correctly guess whether a coin will land on Heads or Tails. ")
     player = str(input("What is your name?"))
 
+
 def rules() -> None:
     print("A coin will be flipped. It is your job to correctly guess what side the coin will land on. ")
     print("The more correct guesses you have in a row, the more points you will earn! ")
@@ -131,9 +124,11 @@ def rules() -> None:
     print("For 4 or more correct guesses you will receive 16 points.")
     print("For an incorrect guess, you will receive 1 point.")
 
+
 def flip() -> int: 
     flip = random.randint(0, 1)
     return (flip)
+
 
 if __name__ == "__main__":
     main()
