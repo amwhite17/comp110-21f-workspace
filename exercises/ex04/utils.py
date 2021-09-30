@@ -2,8 +2,6 @@
 
 __author__ = "730281821"
 
-from random import randint 
-
 
 def all(a: list[int], b: int) -> bool:
     """The main funciton for all."""
