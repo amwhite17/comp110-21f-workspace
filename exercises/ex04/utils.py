@@ -6,6 +6,8 @@ __author__ = "730281821"
 def all(a: list[int], b: int) -> bool:
     """The main funciton for all."""
     i = 0
+    if len(a) == 0:
+        return False
     while i < len(a):
         if a[i] != b:
             return False 
@@ -16,6 +18,8 @@ def all(a: list[int], b: int) -> bool:
 def is_equal(a: list[int], b: list[int]) -> bool:
     """The Main Function for is_equal."""
     i = 0
+    if len(a) != len(b):
+        return False
     while i < len(a):
         if a[i] != b[i]:
             return False 
