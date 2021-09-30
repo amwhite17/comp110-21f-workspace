@@ -15,9 +15,6 @@ def all(a: list[int], b: int) -> bool:
     return True
 
 
-print(all)
-
-
 def is_equal(a: list[int], b: list[int]) -> bool:
     """The Main Function for is_equal."""
     i = 0
@@ -26,9 +23,6 @@ def is_equal(a: list[int], b: list[int]) -> bool:
             return False 
     i = i + 1
     return True
-
-
-print(is_equal)
 
 
 def max(a: list[int]) -> int:
@@ -42,6 +36,3 @@ def max(a: list[int]) -> int:
             the_max = a[i]
         i = i + 1
     return the_max 
-
-    
-print(max)
