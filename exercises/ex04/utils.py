@@ -19,7 +19,7 @@ def is_equal(a: list[int], b: list[int]) -> bool:
     while i < len(a):
         if a[i] != b[i]:
             return False 
-    i = i + 1
+        i = i + 1
     return True
 
 
