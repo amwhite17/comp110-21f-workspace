@@ -42,6 +42,12 @@ def test_favorite_color_usetwo() -> None:
     assert favorite_color(a) == "green"
 
 
+def test_count_edge() -> None:
+    """Test for count using edge.""" 
+    a = ["sun", "sun", "", "cloud", "rain"]
+    assert count(a) == {"sun": 2, "": 1, "cloud": 1, "rain": 1}
+
+
 def test_count_useone() -> None:
     """Test count using use one."""
     a = ["apple", "orange", "lemon", "apple"]
@@ -52,9 +58,3 @@ def test_count_usetwo() -> None:
     """Test count using use two.""" 
     a = ["one", "two", "two", "three", "three", "three"]
     assert count(a) == {"one": 1, "two": 2, "three": 3}
-
-
-def test_count_edge() -> None:
-    """Test for count using edge.""" 
-    a = ["sun", "sun", "", "cloud", "rain"]
-    assert count(a) == {"sun": 2, "": 1, "cloud": 1, "rain": 1}
